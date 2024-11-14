@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>        
+        <TargetFramework>net8.0-windows</TargetFramework>
+        <UseWPF>true</UseWPF>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="GemBox.Bundle" Version="51.0.1281-hotfix" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="OutputFiles" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="crash.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+    </ItemGroup>
+
+</Project>
